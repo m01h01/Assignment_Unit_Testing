@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment_Unit_Testing
 {
-    class Savings : Account
+    public class Savings : Account
     {
         double _interest;
 

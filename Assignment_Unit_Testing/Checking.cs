@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Assignment_Unit_Testing
 {
-    class Checking : Account
-    {
+   public class Checking : Account
+   {
         double _overdraftCharge;
 
         public Checking(double balance) : base(balance)
@@ -29,7 +29,7 @@ namespace Assignment_Unit_Testing
             {
                 if (_balance - amount < 0)
                 {
-                    _balance -= 15;
+                    _balance -= _overdraftCharge;
                 }
                 else
                 {
@@ -37,5 +37,5 @@ namespace Assignment_Unit_Testing
                 }
             }
         }
-    }
+   }
 }
