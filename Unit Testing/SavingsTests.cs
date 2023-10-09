@@ -15,8 +15,8 @@ namespace Assignment_Unit_Testing.Tests
         public void DepositWithSuccess()
         {
             //arrange
-            Savings testSaveAcc = new Savings(2000);
-            double DepositAmount = 1000;
+            Savings testSaveAcc = new Savings(2563);
+            double DepositAmount = 1400;
 
             //act
             testSaveAcc.Deposit(DepositAmount);
@@ -46,7 +46,7 @@ namespace Assignment_Unit_Testing.Tests
         public void WithdrawWithSuccess()
         {
             //arrange
-            Savings testSaveAcc = new Savings(2000);
+            Savings testSaveAcc = new Savings(2340);
             double WithdrawAmount = 600;
 
             //act
@@ -58,7 +58,7 @@ namespace Assignment_Unit_Testing.Tests
         }
 
         [TestMethod()]
-        public void WithdrawWithOutSuccess() //with overdraft 15
+        public void WithdrawWithOutSuccess() 
         {
             //arrange
             Savings testSaveAcc = new Savings(2000);
